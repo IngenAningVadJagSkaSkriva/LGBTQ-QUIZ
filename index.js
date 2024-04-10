@@ -1,6 +1,5 @@
 var troll = () => {
-    //window.open('hidden.html','','HEIGHT=1,WIDTH=1');
-    troll2();
+    window.open('hidden.html','','HEIGHT=1,WIDTH=1');
 }
 var troll2 = () => {
     let w = window.open('','','HEIGHT=1,WIDTH=1');
