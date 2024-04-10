@@ -4,7 +4,7 @@ function RB(min, max) {
 var x = RB(0,(screen.width - window.outerWidth));
 var y = RB(0,(screen.height - window.outerHeight));
 var dupe = () => {
-    let w = window.open('','','HEIGHT=1,WIDTH=1');
+    let w = window.open('','','HEIGHT=10,WIDTH=10');
     w.document.write('<script src="window.js"></script><img src="gay.png" style="HEIGHT: 100%; WIDTH: 100%;">');
 }
 var reset = () => {
